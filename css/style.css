@@ -54,6 +54,7 @@ body {
   margin: 0;
   padding: 31px 0;
   list-style-type: none;
+  font-weight: bold;
 }
 
 .navbar-menu__link {
@@ -506,7 +507,7 @@ template {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .container {
     max-width: 576px;
     width: 92%;
@@ -544,6 +545,16 @@ template {
 @media (max-width: 576px) {
   .logo {
     width: 99px;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    width: 82.5%;
+  }
+  .navbar-top {
+    padding-top: 26px;
+    padding-bottom: 26px;
   }
 }
 /*# sourceMappingURL=style.css.map */
