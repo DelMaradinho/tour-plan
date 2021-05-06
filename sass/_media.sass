@@ -13,6 +13,9 @@
         &-menu
             padding-top: 22px
             padding-bottom: 22px
+            &__link
+                font-size: 12px
+                line-height: 14px
         &__search
             margin-left: auto
     .search
@@ -23,7 +26,23 @@
         max-width: 576px
         width: 92%
     .navbar
-        &-menu
-            &__link
-                font-size: 12px
-                line-height: 14px
+        &-menu, &__search, &__user
+            display: none
+    .menu
+        &-button
+            height: 11px
+            display: flex
+            padding: 0
+            flex-direction: column
+            justify-content: space-between
+            align-items: center
+            border: none
+            background-color: #fff
+            cursor: pointer
+            &__line
+                width: 16px
+                height: 1px
+                background-color: $dark
+@media ( max-width: 576px )
+    .logo
+        width: 99px
