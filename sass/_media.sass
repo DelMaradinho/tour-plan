@@ -43,6 +43,25 @@
                 width: 16px
                 height: 1px
                 background-color: $dark
+    .hotel
+        padding-top: 5px
+        &-wrapper
+            justify-content: space-between
+        &-info
+            &__name
+                margin-top: 10px
+            &__rating
+                display: none
+            &__offer
+                order: -1
+                margin-left: 0
+                margin-top: 0
+            &__text
+                width: 100%
+        &-name
+            flex-basis: 100%
+    .stars
+        flex-basis: auto
 @media ( max-width: 576px )
     .logo
         width: 99px
@@ -52,3 +71,5 @@
         &-top
             padding-top: 26px
             padding-bottom: 26px
+    .stars
+        margin-right: 17px
