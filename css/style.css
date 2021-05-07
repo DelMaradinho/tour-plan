@@ -500,7 +500,7 @@ template {
     line-height: 14px;
   }
   .navbar__search {
-    margin-left: auto;
+    margin-left: 47.25px;
   }
   .search__input {
     width: 340px;
@@ -547,7 +547,7 @@ template {
     width: 99px;
   }
   .container {
-    width: 82.5%;
+    width: 87.5%;
   }
   .navbar-top {
     padding-top: 26px;
