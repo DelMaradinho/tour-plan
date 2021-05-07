@@ -546,9 +546,6 @@ template {
   .logo {
     width: 99px;
   }
-}
-
-@media (max-width: 320px) {
   .container {
     width: 82.5%;
   }
