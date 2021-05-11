@@ -24,6 +24,10 @@
         font-weight: bold
         font-size: 24px
         line-height: 30px
+    &-grid
+        display: flex
+        justify-content: space-between
+        align-items: start
 .stars
     display: flex
     flex-basis: 100%
@@ -93,3 +97,57 @@
         &--prev
             left: 18px
             background-image: url(../img/arrow-prev.svg)
+.booking
+    width: 350px
+    height: 210px
+    padding: 29px 29px 26px 26px
+    background-color: $dark
+    color: $light
+    border-radius: 8px
+    font-family: Nunito
+    &__info
+        display: flex
+        justify-content: space-between
+        margin-bottom: 9px
+    &__price
+        display: flex
+        flex-direction: column
+        font-style: normal
+        font-weight: normal
+        font-size: 10px
+        line-height: 14px
+    &__pricetag
+        font-weight: 800
+        font-size: 24px
+        line-height: 33px
+    &__person-room
+        width: 80px
+    &__guests
+        display: flex
+        justify-content: space-between
+        width: 100%
+        margin-top: 4px
+        margin-bottom: 8px
+        font-size: 12px
+        line-height: 16px
+    &__rooms
+        display: flex
+        justify-content: space-between
+        width: 100%
+        font-size: 12px
+        line-height: 16px
+.call-center
+    display: flex
+    justify-content: space-between
+    align-items: center
+    font-weight: 600
+    font-size: 18px
+    line-height: 25px
+    &__phone
+        display: flex
+        align-items: center
+        justify-content: space-between
+        color: inherit
+        text-decoration: none
+    &__number
+        margin-left: 8px
