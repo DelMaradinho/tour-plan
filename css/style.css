@@ -700,6 +700,11 @@ body {
 .activities__title {
   margin-top: 0;
   margin-bottom: 57px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
 }
 
 .activities__all {
@@ -1408,6 +1413,16 @@ template {
   .card {
     width: 100%;
     height: 255px;
+  }
+  .card:nth-child(2) {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .card:nth-child(4) {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
   }
 }
 /*# sourceMappingURL=style.css.map */
