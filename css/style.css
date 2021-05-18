@@ -764,6 +764,7 @@ body {
 }
 
 .card__title {
+  min-width: 200px;
   margin-top: auto;
   margin-bottom: 18px;
   font-family: Mulish;
@@ -1146,6 +1147,10 @@ template {
     width: 230px;
     height: 230px;
   }
+  .card__title {
+    min-width: 190px;
+    max-width: 190px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1210,6 +1215,9 @@ template {
   .card {
     width: 338px;
     height: 255px;
+  }
+  .card__title {
+    min-width: 200px;
   }
 }
 
