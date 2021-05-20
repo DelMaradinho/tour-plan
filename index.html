@@ -368,7 +368,7 @@
         <div class="container">
             <div class="footer-wrapper">
                 <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" class="logo footer__logo">
-                <div class="footer__list">
+                <div class="footer__list footer__categories">
                     <h3 class="footer__title">ALL CATEGORIES</h3>
                     <ul class="footer__ul">
                         <li class="footer__item"><a href="#" class="footer__link">All Deals</a></li>
@@ -382,8 +382,8 @@
                     </ul>
                 </div>
                 <!-- /.footer__list -->
-                <div class="footer__list">
-                    <h3 class="footer__title">ADDITIONAL INFORMATION</h3>
+                <div class="footer__list footer__list-information">
+                    <h3 class="footer__title footer__information">ADDITIONAL INFORMATION</h3>
                     <ul class="footer__ul">
                         <li class="footer__item"><a href="#" class="footer__link">About Us</a></li>
                         <li class="footer__item"><a href="#" class="footer__link">Contact Us</a></li>
@@ -395,22 +395,22 @@
                 </div>
                 <!-- /.footer__list -->
                 <div class="footer__social-network">
-                    <h3 class="footer__title">Social Network</h3>
+                    <h3 class="footer__title footer__title--inline">Social Network</h3>
                     <div class="footer__social-links">
                         <a href="#" class="footer__link">
-                            <img src="img/fb.svg" alt="Link to our Facebook" class="footer__icon">
+                            <img src="img/fb.svg" alt="Link to our Facebook">
                         </a>
                         <a href="#" class="footer__link">
-                            <img src="img/yt.svg" alt="Link to our YouTube" class="footer__icon">
+                            <img src="img/yt.svg" alt="Link to our YouTube">
                         </a>
                         <a href="#" class="footer__link">
-                            <img src="img/inst.svg" alt="Link to our Instagram" class="footer__icon">
+                            <img src="img/inst.svg" alt="Link to our Instagram">
                         </a>
                     </div>
                     <!-- /.footer__social-links -->
                 </div>
                 <!-- /.footer__social-network -->
-                <div class="footer__list">
+                <div class="footer__list footer__legal">
                     <h3 class="footer__title">LEGAL INFORMATION</h3>
                     <ul class="footer__ul">
                         <li class="footer__item"><a href="#" class="footer__link">Terms & Conditions</a></li>
@@ -428,14 +428,14 @@
                         Feel free to contact us by phone, email or by our contact form
                     </p>
                     <ul class="footer__list">
-                        <li class="footer__item">
+                        <li class="footer__item footer__item--mb-2">
                             <div class="footer__icon-wrapper">
                                 <img src="img/map-marker.svg" alt="icon: map" class="footer__icon">
                             </div>
                             <!-- /.footer__icon-wrapper -->
                             9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States
                         </li>
-                        <li class="footer__item">
+                        <li class="footer__item footer__item--mb-2">
                             <div class="footer__icon-wrapper">
                                 <img src="img/contact-phone.svg" alt="icon: phone" class="footer__icon">
                             </div>
@@ -444,7 +444,7 @@
                             Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm)<br>
                             Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
                         </li>
-                        <li class="footer__item">
+                        <li class="footer__item footer__item--mb-2">
                             <div class="footer__icon-wrapper">
                                 <img src="img/mail.svg" alt="icon: mail" class="footer__icon">
                             </div>
@@ -455,15 +455,13 @@
                 </div>
                 <!-- /.footer__contact-details -->
                 <div class="footer__contact-form">
-                    <h3 class="footer__title">
+                    <h3 class="footer__title footer__title--mb-3">
                         Send us a message
                     </h3>
                     <form action="#" class="footer__form">
                         <input type="text" class="input footer__input" placeholder="Your Full Name*">
                         <input type="text" class="input footer__input" placeholder="Phone Number*">
-                        <textarea class="footer__message" cols="30" rows="10" placeholder="Message">
-
-                        </textarea>
+                        <textarea class="footer__message" cols="30" rows="10" placeholder="Message"></textarea>
                         <button class="button footer__button">
                             Send
                         </button>
@@ -473,7 +471,14 @@
                     </form>
                 </div>
                 <!-- /.footer__contact-form -->
-            </div>
+                    <ul class="footer__extra-info">
+                        <li class="footer__extra-item"><a href="#" class="footer__extra-link">Disclaimer</a></li>
+                        <li class="footer__extra-item"><a href="#" class="footer__extra-link">Conditions of use</a></li>
+                        <li class="footer__extra-item"><a href="#" class="footer__extra-link">Cancellation policy</a></li>
+                    </ul>
+                <!-- /.footer__extra-info -->
+                <img src="img/extra-icons.svg" alt="Icons: Amex, Apple, Amazon, PayPal, MasterCard" class="footer__extra-icons">
+                </div>
             <!-- /.footer__wrapper -->
         </div>
         <!-- /.container -->
