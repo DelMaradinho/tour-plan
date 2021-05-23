@@ -39,6 +39,7 @@
         &__input
             width: 340px
     .hotel
+        padding-bottom: 60px
         &-grid
             flex-direction: column
         &__booking-map
@@ -49,6 +50,7 @@
     .booking, .map
         width: 340px
     .reviews
+        padding-bottom: 60px
         &__title
             margin-bottom: 50px
             font-size: 30px
@@ -57,6 +59,7 @@
             &__item
                 max-width: 580px
     .activities
+        padding-bottom: 50px
         &__all
             flex-wrap: wrap
         &__card
@@ -67,23 +70,29 @@
         &__title
             min-width: 200px
     .footer
+        padding-top: 73px
+        padding-bottom: 33px
         &-wrapper
             grid-template-columns: repeat(6, 1fr)
-            grid-row-gap: 38px
+            grid-row-gap: 45px
         &__logo
+            width: 98px
+            height: auto
+            margin-top: 0
             grid-row: 1 / 2
             grid-column: span 2
         &__social
             &-network
                 grid-row: 1 / 2
-                grid-column: span 6
+                grid-column: span 4
                 align-self: center
         &__categories
             grid-row: 2 / 3
             grid-column: span 2
-        &_information
-            grid-row: 2 / 3
-            grid-column: 3 / 5
+        &__list
+            &-information
+                grid-row: 2 / 3
+                grid-column: span 2
         &__legal
             grid-row: 2 / 3
             grid-column: 5 / 7
