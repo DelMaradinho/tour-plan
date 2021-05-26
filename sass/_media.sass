@@ -134,24 +134,46 @@
         &-bottom
             display: none
             position: fixed
-            left:
+            left: 0
             right: 0
             bottom: 0
-            top: 78px
+            top: 70px
             &--visible
                 display: block
+                padding: 10px 0 68px 0
                 left: 0
-                top: 0
+                top: 70px
                 right: 0
-                z-index: 99
+                bottom: none
+                z-index: 50
+        &-menu
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            &__item
+                margin-bottom: 20px
+                &--mobile
+                    &_visible
+                        display: block
+        &__user, &__search
+            &--mobile
+                &_hidden
+                    display: none
+                &_visible
+                    display: flex
+                    margin-left: 0
         &__user
-            &--mobile
-                &--hidden
-                    display: none
+            flex-direction: column
+            justify-content: center
         &__search
-            &--mobile
-                &--hidden
-                    display: none
+            &--m-auto
+                margin: 0 auto
+    .user
+        &__name
+            &--light
+                margin-left: 0
+                margin-top: 10px
+                color: $light
     .menu
         &-button
             height: 11px
@@ -235,6 +257,10 @@
         &-top
             padding-top: 26px
             padding-bottom: 26px
+    .search
+        &__input
+            &--mw-90
+                max-width: 243px
     .hotel
         padding-bottom: 40px
         &-info

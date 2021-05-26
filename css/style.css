@@ -41,6 +41,10 @@ body {
   margin-left: 108px;
 }
 
+.navbar__search--mobile_visible {
+  display: none;
+}
+
 .navbar-bottom {
   background-color: #0A223D;
 }
@@ -56,6 +60,10 @@ body {
   padding: 31px 0;
   list-style-type: none;
   font-weight: bold;
+}
+
+.navbar-menu__item--mobile_visible {
+  display: none;
 }
 
 .navbar-menu__link {
@@ -130,6 +138,10 @@ body {
   font-size: 14px;
   line-height: 18px;
   color: #333;
+}
+
+.navbar__user--mobile_visible, .navbar__search--mobile_visible {
+  display: none;
 }
 
 .breadcrumb-list {
@@ -1617,22 +1629,63 @@ template {
   .navbar-bottom {
     display: none;
     position: fixed;
+    left: 0;
     right: 0;
     bottom: 0;
-    top: 78px;
+    top: 70px;
   }
   .navbar-bottom--visible {
     display: block;
+    padding: 10px 0 68px 0;
     left: 0;
-    top: 0;
+    top: 70px;
     right: 0;
-    z-index: 99;
+    bottom: none;
+    z-index: 50;
   }
-  .navbar__user--mobile--hidden {
+  .navbar-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navbar-menu__item {
+    margin-bottom: 20px;
+  }
+  .navbar-menu__item--mobile_visible {
+    display: block;
+  }
+  .navbar__user--mobile_hidden, .navbar__search--mobile_hidden {
     display: none;
   }
-  .navbar__search--mobile--hidden {
-    display: none;
+  .navbar__user--mobile_visible, .navbar__search--mobile_visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 0;
+  }
+  .navbar__user {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navbar__search--m-auto {
+    margin: 0 auto;
+  }
+  .user__name--light {
+    margin-left: 0;
+    margin-top: 10px;
+    color: #FFFFFF;
   }
   .menu-button {
     height: 11px;
@@ -1761,6 +1814,9 @@ template {
   .navbar-top {
     padding-top: 26px;
     padding-bottom: 26px;
+  }
+  .search__input--mw-90 {
+    max-width: 243px;
   }
   .hotel {
     padding-bottom: 40px;

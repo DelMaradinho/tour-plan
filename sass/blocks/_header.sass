@@ -11,6 +11,9 @@
     &__search
         margin-right: auto
         margin-left: 108px
+        &--mobile
+            &_visible
+                display: none
     &-bottom
         background-color: $dark
     &-menu
@@ -20,6 +23,10 @@
         padding: 31px 0
         list-style-type: none
         font-weight: bold
+        &__item
+            &--mobile
+                &_visible
+                    display: none
         &__link
             text-decoration: none
             color: $light
@@ -69,3 +76,8 @@
         font-size: 14px
         line-height: 18px
         color: $text-color
+.navbar
+    &__user, &__search
+        &--mobile
+            &_visible
+                display: none
