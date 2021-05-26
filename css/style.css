@@ -1636,7 +1636,10 @@ template {
   }
   .navbar-bottom--visible {
     display: block;
-    padding: 10px 0 68px 0;
+    min-height: 498px;
+    max-height: 100%;
+    overflow-y: scroll;
+    padding: 10px 0 48px 0;
     left: 0;
     top: 70px;
     right: 0;
@@ -1680,11 +1683,16 @@ template {
             justify-content: center;
   }
   .navbar__search--m-auto {
-    margin: 0 auto;
+    margin: 0 auto 17px auto;
   }
   .user__name--light {
     margin-left: 0;
     margin-top: 10px;
+    margin-bottom: 7px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
     color: #FFFFFF;
   }
   .menu-button {
