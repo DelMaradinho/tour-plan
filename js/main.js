@@ -36,5 +36,6 @@ var hotelSlider = new Swiper('.hotel-slider', {
 
   var menuButton = document.querySelector('.menu-button');
   menuButton.addEventListener('click', function(){
+    console.log('Button clicked');
     document.querySelector('.navbar-bottom').classList.toggle('.navbar-bottom--visible');
   });
