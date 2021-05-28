@@ -14,6 +14,52 @@ body {
   margin: auto;
 }
 
+.input {
+  height: 50px;
+  padding: 0 23px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.message {
+  padding: 18px 23px;
+  resize: none;
+  background-color: #FFFFFF;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+}
+
+.button {
+  min-width: 160px;
+  height: 50px;
+  padding: 18px 65px;
+  background-color: #EC1F46;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+}
+
+.required {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #E0E0E0;
+}
+
 .navbar {
   background-color: #fff;
 }
@@ -486,6 +532,27 @@ body {
   height: 213px;
 }
 
+.back__button {
+  width: 70px;
+  height: 30px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  border-radius: 4px;
+  border: none;
+  background-color: #EC1F46;
+  color: #FFFFFF;
+}
+
+.back__link {
+  display: block;
+  padding: auto;
+  text-decoration: none;
+  color: inherit;
+}
+
 .newsletter {
   position: relative;
   padding: 98px 0 87px 0;
@@ -825,6 +892,10 @@ body {
   margin-top: 30px;
 }
 
+.footer__logo-image {
+  width: 100%;
+}
+
 .footer__categories {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
@@ -1029,15 +1100,8 @@ body {
   -ms-flex-preferred-size: 47%;
       flex-basis: 47%;
   margin-bottom: 15px;
-  padding: 0 23px;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  border: none;
-  outline: none;
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
 }
 
 .footer__message {
@@ -1045,39 +1109,97 @@ body {
       flex-basis: 100%;
   height: 123px;
   margin-bottom: 22px;
-  padding: 18px 23px;
-  resize: none;
-  background-color: #FFFFFF;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 98;
+  background-color: rgba(0, 143, 223, 0.39);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.modal__overlay--visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  max-width: 478px;
+  padding: 33px 88px;
+  z-index: 99;
+  border-radius: 8px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #FFFFFF;
+  background-color: #0A223D;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.modal__dialog--visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__close {
+  position: fixed;
+  top: 17px;
+  right: 18px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal__title {
+  margin: 0 0 15px 0;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.modal__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
   color: #BDBDBD;
-  border: none;
-  border-radius: 4px;
 }
 
-.footer__button {
-  min-width: 160px;
-  height: 50px;
-  padding: 18px 65px;
-  background-color: #EC1F46;
-  border-radius: 4px;
-  border: none;
-  cursor: pointer;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  color: #FFFFFF;
+.modal__input {
+  width: 100%;
+  margin-bottom: 15px;
 }
 
-.footer__info {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  color: #E0E0E0;
+.modal__message {
+  width: 100%;
+  min-height: 123px;
+  margin-bottom: 15px;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -1609,6 +1731,10 @@ template {
         align-self: center;
     margin-left: 0;
   }
+  .modal__button {
+    width: 100%;
+    margin-bottom: 15px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1912,6 +2038,10 @@ template {
     grid-column: 2 / 3;
     margin-left: 0;
   }
+  .modal__dialog {
+    padding: 33px 70px;
+    min-width: 400px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -2099,6 +2229,14 @@ template {
     -ms-grid-column: 1;
     grid-column: 1;
     margin-left: 0;
+  }
+  .modal__dialog {
+    padding: 33px 50px;
+    max-width: 70%;
+    min-width: 300px;
+  }
+  .button {
+    padding: 0;
   }
 }
 
