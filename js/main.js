@@ -61,4 +61,32 @@ $(document).ready(function () {
     modalOverlay.removeClass('modal__overlay--visible');
     modalDialog.removeClass('modal__dialog--visible');
   }
+
+  //Обработка форм
+  $(".form").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Please specify your name",
+          minlength: "Name must be at least 2 letters"
+        },
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com"
+        },
+        phone: {
+          required: "We need your phone number to contact you",
+          minlength: "Correct phone format +7 (123) 456-78-90"
+        }
+      }
+    });
+  });
+
+  //Маска для телефона
+  $('.input__phone').mask('+7 (YYY) YYY-YY-YY', {'translation': {
+    Y: {pattern: /[0-9]/}
+    }}
+  );
+
 });

@@ -60,6 +60,10 @@ body {
   color: #E0E0E0;
 }
 
+.invalid {
+  color: #EC1F46;
+}
+
 .navbar {
   background-color: #fff;
 }
@@ -1096,10 +1100,14 @@ body {
 }
 
 .footer__input {
+  width: 100%;
+}
+
+.footer__input-group {
   height: 50px;
   -ms-flex-preferred-size: 47%;
       flex-basis: 47%;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   font-style: normal;
   font-weight: normal;
 }
@@ -1164,7 +1172,7 @@ body {
 }
 
 .modal__title {
-  margin: 0 0 15px 0;
+  margin: 0;
   font-size: 18px;
   line-height: 23px;
   text-align: center;
@@ -1193,13 +1201,17 @@ body {
 
 .modal__input {
   width: 100%;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .modal__message {
   width: 100%;
   min-height: 123px;
-  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.modal__button {
+  margin-top: 15px;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -1566,7 +1578,7 @@ template {
     min-width: 190px;
     max-width: 190px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -1705,7 +1717,7 @@ template {
     grid-column: span 6;
     max-width: 540px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 47%;
         flex-basis: 47%;
   }
@@ -2018,7 +2030,7 @@ template {
         -ms-flex-order: 2;
             order: 2;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -2212,6 +2224,9 @@ template {
             order: 2;
   }
   .footer__input {
+    width: 100%;
+  }
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
