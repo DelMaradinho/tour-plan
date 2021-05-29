@@ -88,5 +88,5 @@ $(document).ready(function () {
     Y: {pattern: /[0-9]/}
     }}
   );
-
+  AOS.init();
 });
