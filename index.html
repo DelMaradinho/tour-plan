@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best Tour Plan - Hotel Booking</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap" rel="preload" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet" rel="preload" as="font" >
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
@@ -230,8 +230,8 @@
                     Newsletter
                 </span>
             </h2>
-            <form action="#" class="subscribe newsletter__subscribe">
-                <input type="email" class="subscribe__input" placeholder="Your email address">
+            <form action="send.php" method="POST" class="subscribe newsletter__subscribe form">
+                <input type="email" class="subscribe__input" placeholder="Your email address" name="email">
                 <button class="subscribe__button">
                     Send
                 </button>
@@ -345,7 +345,7 @@
                         <img src="img/activity-1.jpg" alt="The curious corner of chamarel" class="card__image">
                         <h3 class="card__title">The curious corner<br>of chamarel</h3>
                         <!-- /.card__title -->
-                        <button class="card__button">Book Now</button>
+                        <button data-toggle="modal"  class="card__button">Book Now</button>
                         <!-- /.card__button -->
                     </div>
                     <!-- /.card -->
@@ -353,7 +353,7 @@
                         <img src="img/activity-2.jpg" alt="Gymkhana club golf course" class="card__image">
                         <h3 class="card__title">Gymkhana club golf<br>course</h3>
                         <!-- /.card__title -->
-                        <button class="card__button">Book Now</button>
+                        <button data-toggle="modal"  class="card__button">Book Now</button>
                         <!-- /.card__button -->
                     </div>
                     <!-- /.card -->
@@ -361,7 +361,7 @@
                         <img src="img/activity-3.jpg" alt="Tamarind falls hiking trip - full day" class="card__image">
                         <h3 class="card__title">Tamarind falls hiking<br>trip - full day</h3>
                         <!-- /.card__title -->
-                        <button class="card__button">Book Now</button>
+                        <button data-toggle="modal"  class="card__button">Book Now</button>
                         <!-- /.card__button -->
                     </div>
                     <!-- /.card -->
@@ -369,7 +369,7 @@
                         <img src="img/activity-4.jpg" alt="The blue marine discovery quest" class="card__image">
                         <h3 class="card__title">The blue marine discovery quest</h3>
                         <!-- /.card__title -->
-                        <button class="card__button">Book Now</button>
+                        <button data-toggle="modal"  class="card__button">Book Now</button>
                         <!-- /.card__button -->
                     </div>
                     <!-- /.card -->

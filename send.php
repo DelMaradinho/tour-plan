@@ -9,6 +9,7 @@ require 'phpmailer/Exception.php';
 // Переменные, которые отправляет пользователь
 $name = $_POST['name'];
 $phone = $_POST['phone'];
+$email = $_POST['email'];
 $message = $_POST['message'];
 
 // Формирование самого письма
@@ -16,7 +17,8 @@ $title = "Новое обращение с сайта Best Tour Plan";
 $body = "
 <h2>Новое обращение</h2>
 <b>Имя пользователя:</b> $name<br>
-<b>Телефон:</b> $phone<br><br>
+<b>Телефон:</b> $phone<br>
+<b>Email</b> $email<br><br>
 <b>Сообщение:</b><br>$message
 ";
 
@@ -40,19 +42,6 @@ try {
     // Получатель письма
     $mail->addAddress('admitriev91@gmail.com');
 
-    // Прикрипление файлов к письму
-if (!empty($file['name'][0])) {
-    for ($ct = 0; $ct < count($file['tmp_name']); $ct++) {
-        $uploadfile = tempnam(sys_get_temp_dir(), sha1($file['name'][$ct]));
-        $filename = $file['name'][$ct];
-        if (move_uploaded_file($file['tmp_name'][$ct], $uploadfile)) {
-            $mail->addAttachment($uploadfile, $filename);
-            $rfile[] = "Файл $filename прикреплён";
-        } else {
-            $rfile[] = "Не удалось прикрепить файл $filename";
-        }
-    }   
-}
 // Отправка сообщения
 $mail->isHTML(true);
 $mail->Subject = $title;

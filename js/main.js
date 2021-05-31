@@ -77,7 +77,7 @@ $(document).ready(function () {
         },
         phone: {
           required: "We need your phone number to contact you",
-          minlength: "Correct phone format +7 (123) 456-78-90"
+          minlength: "You must enter 10 numbers"
         }
       }
     });
