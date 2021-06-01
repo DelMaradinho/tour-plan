@@ -37,7 +37,6 @@ $(document).ready(function () {
 
   var menuButton = $('.menu-button');
   menuButton.on('click', function(){
-    console.log('Button clicked');
     $('.navbar-bottom').toggleClass('navbar-bottom--visible');
   });
 
